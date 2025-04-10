@@ -8,11 +8,10 @@ This is a lexer for a simplified Java language (MiniJava) written using Flex.
 - `main.c` - The main driver for running the lexer.
 - `miniJava.l` - The Flex file containing lexical rules.
 - `tokens.h` - Header file defining all token types.
-
+- `lex.yy.c` - Actual lexer file generated from flex.
 ## Build and Run
 
 ```bash
-flex miniJava.l
 gcc lex.yy.c main.c -o lexer
 ./lexer <your_mini_java_file.java>
 ```
